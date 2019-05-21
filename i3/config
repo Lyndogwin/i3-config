@@ -12,6 +12,7 @@ floating_modifier $super
 exec_always --no-startup-id hsetroot -fill ~/.tori_gates_kyoto.jpg
 exec --no-startup-id xsettingsd &
 exec --no-startup-id compton -b -f
+exec --no-startup-id i3-sensible-terminal -e "gotop; zsh"
 exec --no-startup-id i3-sensible-terminal -e "neofetch; zsh"
 exec --no-startup-id xinput set-prop 12 286 1
 
