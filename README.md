@@ -1,5 +1,5 @@
 # i3-config
-Note: Folders ```i3``` and ```i3status``` go into the ```.config``` directory in home or ```~/```. The remaining files go directly into ```~/```
+Note: Folders ```i3``` and ```i3status``` go into the ```.config``` directory found in the home or ```~/``` directory. The remaining files go directly into ```~/```
 
 Alternatively, you can create symbolic links for the files in this directory. Just create aforementioned links where you would put the original files.
 
