@@ -6,3 +6,4 @@ Alternatively, you can create symbolic links for the files in this directory. Ei
 ### Additional Dependencies (Primarily for personal recall/ should apply to those also using ubuntu)
 * ```fcitx``` with mozc for Japanese Kana input
 * ```light``` for brightness controls
+* ```nerd fonts``` https://github.com/ryanoasis/nerd-fonts for the zsh stylization 
