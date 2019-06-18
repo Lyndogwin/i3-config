@@ -6,6 +6,7 @@ call plug#begin()                                                               
   Plug 'itchyny/lightline.vim'                                                
   Plug 'scrooloose/nerdtree'                                                  
   Plug 'tpope/vim-surround'                                                   
+  Plug 'burner/vim-svelte' 
 call plug#end()                                                               
                                                                               
 syntax on                                                                     
@@ -29,7 +30,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 "checkers
 "--------
-let g:syntastic_html_checkers= ["validator", "w3"]
+let g:syntastic_html_checkers= ["validator"]
 
 " Mappings                                                                    
 " --------                                                                    
