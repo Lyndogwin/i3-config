@@ -8,7 +8,7 @@ ln -s ~/i3-config/.Xresources ~/
 ln -s ~/i3-config/.xsettingsd ~/ 
 ln -s ~/i3-config/.urxvt ~/ 
 ln -s ~/i3-config/.bash_aliases ~/ 
-#ln -s ~/i3-config/.xsettingsd ~/.config/ 
+ln -s ~/i3-config/.vimrc ~/ 
 #ln -s ~/i3-config/.xsettingsd ~/.config/ 
 #ln -s ~/i3-config/.xsettingsd ~/.config/ 
 
