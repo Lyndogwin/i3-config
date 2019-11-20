@@ -14,8 +14,11 @@ exec --no-startup-id xsettingsd &
 exec --no-startup-id compton -b -f
 exec --no-startup-id i3-sensible-terminal -e "gotop; zsh"
 exec --no-startup-id i3-sensible-terminal -e "cd ~/i3-config; neofetch; zsh"
-exec --no-startup-id xinput set-prop 12 286 1
+exec_always --no-startup-id xinput set-prop 12 286 1
+exec_always --no-startup-id xinput set-prop 12 294 1
+exec_always --no-startup-id xinput set-prop 12 293 1
 exec_always --no-startup-id i3-sensible-terminal -e "fcitx"
+
 
 # start a terminal
 bindsym $super+Return exec i3-sensible-terminal
@@ -31,7 +34,7 @@ bindsym $super+Shift+w exec google-chrome
 bindsym $super+Shift+f exec thunar;workspace 3;focus
 bindsym $super+Shift+g exec geany
 bindsym $super+Shift+i exec i3-sensible-terminal -e nmcli d wifi list; zsh
-bindsym $super+Shift+c exec i3-sensible-terminal "nmcli d wifi con 'name' password 'pass'"
+bindsym $super+Shift+x exec i3-sensible-terminal -e xinput list-props 12; zsh
 
 #change volume
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
@@ -41,8 +44,10 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 # screen brightness
 # bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 # bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
-bindsym XF86MonBrightnessUp exec light -A 5; # increase screen brightness
-bindsym XF86MonBrightnessDown exec light -U 5; # decrease screen brightness
+
+# Screen Brightness control
+bindsym XF86MonBrightnessUp exec light -A 5; 
+bindsym XF86MonBrightnessDown exec light -U 5; 
 
 # music control
 bindsym XF86AudioNext exec mpc next

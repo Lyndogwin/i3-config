@@ -7,6 +7,7 @@ call plug#begin()                                                               
   Plug 'scrooloose/nerdtree'                                                  
   Plug 'tpope/vim-surround'                                                   
   Plug 'burner/vim-svelte' 
+
   Plug 'https://github.com/pangloss/vim-javascript.git'
 call plug#end()                                                               
 syntax on                                                                     
@@ -21,6 +22,7 @@ set expandtab       " tabs are space
 set autoindent
 set copyindent      " copy indent from the previous line
 
+" funky cool status line (lightline)
 let g:lightline = {                                                           
   \ 'colorscheme': 'onedark',                                                 
   \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },                     
@@ -37,7 +39,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 "checkers
 "--------
-let g:syntastic_html_checkers= ["validator"]
+" let g:syntastic_html_checkers= ["validator"]
 
 " Mappings                                                                    
 " --------                                                                    
