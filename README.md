@@ -7,4 +7,5 @@ Alternatively, you can create symbolic links for the files in this directory. Ei
 * ```zsh``` shell with oh-my-zsh framework https://github.com/robbyrussell/oh-my-zsh
 * ```fcitx``` with mozc for Japanese Kana input
 * ```light``` for brightness controls
-* ```nerd fonts``` https://github.com/ryanoasis/nerd-fonts for the zsh stylization 
+* ```wpgtk --> pywal``` for background + system colorscheme https://github.com/deviantfero/wpgtk
+* ```nerd fonts``` for the zsh stylization https://github.com/ryanoasis/nerd-fonts 
